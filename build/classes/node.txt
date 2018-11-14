@@ -1,0 +1,32 @@
+访问地址：http://localhost:8081/ConvertTools/main/index
+option = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: [@1_1@]
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [@1_2@],
+        type: 'line',
+        areaStyle: {}
+    }]
+};
+option = {
+    xAxis: {
+        type: 'category',
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line'
+    }]
+};
+
+
+1,select * from other_test_data where t1!=? and t2!=?,1@2
