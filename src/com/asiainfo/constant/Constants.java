@@ -16,4 +16,6 @@ public interface Constants {
 	String JDBC_USER = "jdbc.user";
 	String JDBC_PASSWORD = "jdbc.password";
 	
+	String LOGIN_USER="loginUser";
+	
 }

@@ -21,6 +21,7 @@
     <!-- if you use annotation you must configure following setting -->
     <mvc:annotation-driven />
     
+    
     <!-- configure the InternalResourceViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" 
             id="internalResourceViewResolver">
@@ -29,4 +30,16 @@
         <!-- 后缀 -->
         <property name="suffix" value=".jsp" />
     </bean>
+    
+    <mvc:interceptors>
+    	<mvc:interceptor>
+    		<mvc:mapping path="/**"/>
+    		<mvc:exclude-mapping path="/toLoginPage"/>
+    		<mvc:exclude-mapping path="/getLogin"/>
+    		<mvc:exclude-mapping path="/outLogin"/>
+    		<mvc:exclude-mapping path="/queryJson"/>
+    		<mvc:exclude-mapping path="/assets/**"/>
+			<bean class="com.asiainfo.interceptor.AccessInterceptor"></bean>    		
+    	</mvc:interceptor>
+    </mvc:interceptors>
 </beans>
