@@ -20,4 +20,10 @@ public class UserServiceImpl implements
 				user.getUserName(),user.getPassword());
 		return u;
 	}
+
+	@Override
+	public void updatePassword(User user) {
+		userDao.batchEntityByHQL("Update User u set u.password=? where u.userName=?", 
+				user.getPassword(),user.getUserName());
+	}
 }

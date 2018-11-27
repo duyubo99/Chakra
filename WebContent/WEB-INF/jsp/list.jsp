@@ -16,6 +16,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<jsp:include page="top.jsp" flush="true"/>
   	<div id="tb" style="padding:3px">
 		<span>接口编号:</span>
 		<input id="busNo" style="line-height:26px;border:1px solid #ccc">

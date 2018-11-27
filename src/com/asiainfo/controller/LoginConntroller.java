@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.asiainfo.constant.Constants;
@@ -39,5 +40,13 @@ public class LoginConntroller {
 		request.getSession().setAttribute(Constants.LOGIN_USER, "");
 		view.setViewName("login");
 		return view;
+	}
+	
+	@RequestMapping("/editPassword")
+	@ResponseBody
+	public String editPassword(User user,HttpServletRequest request){
+		user.setUserName(request.getSession().getAttribute(Constants.LOGIN_USER).toString());
+		userService.updatePassword(user);
+		return "1";
 	}
 }
