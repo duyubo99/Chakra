@@ -27,7 +27,7 @@ public class LoginConntroller {
 		if(user!=null){
 			//存入session
 			request.getSession().setAttribute(Constants.LOGIN_USER, user.getUserName());
-			view.setViewName("redirect:/main/index");
+			view.setViewName("redirect:/main");
 		}else{
 			view.setViewName("login");
 		}
@@ -38,7 +38,7 @@ public class LoginConntroller {
 	public ModelAndView outLogin(User user,HttpServletRequest request){
 		ModelAndView view=new ModelAndView();
 		request.getSession().setAttribute(Constants.LOGIN_USER, "");
-		view.setViewName("login");
+		view.setViewName("redirect:/toLoginPage");
 		return view;
 	}
 	
@@ -49,4 +49,9 @@ public class LoginConntroller {
 		userService.updatePassword(user);
 		return "1";
 	}
+	@RequestMapping("/toEditPassPage")
+	public String toEditPassPage(){
+		return "editpassword";
+	}
+	
 }

@@ -16,7 +16,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page="top.jsp" flush="true"/>
+<%-- <jsp:include page="top.jsp" flush="true"/> --%>
+<%-- <jsp:include page="left.jsp" flush="true"/> --%>
   	<div id="tb" style="padding:3px">
 		<span>接口编号:</span>
 		<input id="busNo" style="line-height:26px;border:1px solid #ccc">
@@ -32,8 +33,7 @@
 	<a href="<%=basePath %>main/index" class="easyui-linkbutton" iconCls="icon-redo"
 	style="float: left;">跳转新增</a>
 	</div>
-	<h1>示例代码</h1>
-	<img style='width:600px; height:500px;float: left;' src='<%=basePath %>images/jsDemo.png'>
+	
 </body>
 
 <script>

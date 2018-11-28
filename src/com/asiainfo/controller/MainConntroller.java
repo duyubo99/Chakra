@@ -30,10 +30,29 @@ public class MainConntroller {
 	
 	Map<String,String> sqls;
 	Map<String,String> sqlsParams;
+	@RequestMapping
+	public String getMain(){
+		return "main";
+	}
 	
 	@RequestMapping("/index")
 	public String getIndex(){
 		return "index";
+	}
+	
+	@RequestMapping("/left")
+	public String getLeft(){
+		return "left";
+	}
+	
+	@RequestMapping("/top")
+	public String getTop(){
+		return "top";
+	}
+	
+	@RequestMapping("/echartDemo")
+	public String getDchartDemo(){
+		return "echartdemo";
 	}
 	@RequestMapping("/toUpdateText")
     public  ModelAndView  toUpdateText(int id){

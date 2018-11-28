@@ -20,7 +20,8 @@
 	<script type="text/javascript" src="<%=basePath %>jquery-easyui-1.6.7/jquery.easyui.min.js"></script>
 </head>
 <body>
-<jsp:include page="top.jsp" flush="true"/>
+<%-- <jsp:include page="top.jsp" flush="true"/> --%>
+<%-- <jsp:include page="left.jsp" flush="true"/> --%>
 <div style="margin:20px 0;">
 	<a href="<%=basePath %>main/toList" class="easyui-linkbutton" iconCls="icon-undo"
 	style="float: left;">跳转列表</a>
