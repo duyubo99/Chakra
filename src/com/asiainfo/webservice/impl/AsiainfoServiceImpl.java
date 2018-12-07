@@ -38,13 +38,13 @@ public class AsiainfoServiceImpl implements
 			if(sql==null){
 				return "error:not key:【"+key+"】";
 			}
-			if(param.indexOf(":")==-1){
+			if(param.indexOf("=")==-1){
 				return sqlService.convertJsonPar2Jsontext(text,sqls,sqlsParams);
 			}
 			String[] kvParams = param.split("@");
 			Map<String,String> map = new HashMap<String,String>();
 			for (String str : kvParams) {
-				String[] kvParam = str.split(":");
+				String[] kvParam = str.split("=");
 				String field = kvParam[0];
 				String val = kvParam[1];
 				map.put(field, val);
