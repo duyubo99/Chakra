@@ -21,7 +21,10 @@ public class SqlServiceImpl implements
 
 	@Resource(name="sqltextDao")
 	private BaseDao<Sqltext> sqltextDao ;
-	
+	/**
+	 * {2=select * from other_test_data where t1!=? and t2!=?, 1=select * from other_test_data where t1!=? and t2!=?}
+	 * {2=1@2, 1=1@2}
+	 */
 	@Override
 	public String convertJsonPar2Jsontext(String text, Map<String,String> sqls
 			,Map<String,String> sqlsParams) {

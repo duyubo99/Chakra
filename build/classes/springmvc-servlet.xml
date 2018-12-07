@@ -37,7 +37,7 @@
     		<mvc:exclude-mapping path="/toLoginPage"/>
     		<mvc:exclude-mapping path="/getLogin"/>
     		<mvc:exclude-mapping path="/outLogin"/>
-    		<mvc:exclude-mapping path="/queryJson"/>
+    		<mvc:exclude-mapping path="/**/queryJson"/>
     		<mvc:exclude-mapping path="/assets/**"/>
 			<bean class="com.asiainfo.interceptor.AccessInterceptor"></bean>    		
     	</mvc:interceptor>
