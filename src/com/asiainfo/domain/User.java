@@ -1,4 +1,4 @@
-package com.asiainfo.domain.other;
+package com.asiainfo.domain;
 
 import java.io.Serializable;
 

@@ -2,8 +2,8 @@ package com.asiainfo.service;
 
 import java.util.Map;
 
-import com.asiainfo.domain.other.Jsontext;
-import com.asiainfo.domain.other.Sqltext;
+import com.asiainfo.domain.Jsontext;
+import com.asiainfo.domain.Sqltext;
 import com.asiainfo.util.MyPage;
 
 

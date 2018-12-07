@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.alibaba.fastjson.JSONObject;
-import com.asiainfo.domain.other.Jsontext;
+import com.asiainfo.domain.Jsontext;
 import com.asiainfo.service.OtherService;
 import com.asiainfo.service.SqlService;
 import com.asiainfo.util.MyPage;

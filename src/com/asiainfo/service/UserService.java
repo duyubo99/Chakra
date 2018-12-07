@@ -1,6 +1,6 @@
 package com.asiainfo.service;
 
-import com.asiainfo.domain.other.User;
+import com.asiainfo.domain.User;
 
 
 public interface UserService{

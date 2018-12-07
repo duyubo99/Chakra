@@ -10,8 +10,8 @@ import javax.annotation.Resource;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
-import com.asiainfo.domain.other.Jsontext;
-import com.asiainfo.domain.other.Sqltext;
+import com.asiainfo.domain.Jsontext;
+import com.asiainfo.domain.Sqltext;
 import com.asiainfo.hdao.BaseDao;
 import com.asiainfo.service.OtherService;
 import com.asiainfo.util.MyPage;

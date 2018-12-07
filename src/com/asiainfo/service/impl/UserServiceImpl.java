@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.asiainfo.domain.other.User;
+import com.asiainfo.domain.User;
 import com.asiainfo.hdao.BaseDao;
 import com.asiainfo.service.UserService;
 

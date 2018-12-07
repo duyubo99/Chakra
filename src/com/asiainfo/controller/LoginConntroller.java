@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.asiainfo.constant.Constants;
-import com.asiainfo.domain.other.User;
+import com.asiainfo.domain.User;
 import com.asiainfo.service.UserService;
 
 @Controller

@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.asiainfo.domain.other.Sqltext;
+import com.asiainfo.domain.Sqltext;
 import com.asiainfo.hdao.BaseDao;
 import com.asiainfo.service.SqlService;
 import com.asiainfo.util.DynamicDataSourceHolder;
